@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google Maps Store Locator</title>
+<link rel="stylesheet" href="style/style.css">
+<script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+<script src="js/store-data.js"></script>
+</head>
+<body>
+    <div class="title">Store Locator</div>
+      <div class="search-container">
+        <div class="search">
+          <input type="text" id="zip-code-input" placeholder="Enter Zip">
+          <i class="fas fa-search" onclick="searchstores()"></i>
+        </div>
+    </div>
+
+    <div class="stores-list-container">
+      <div class="stores-list">
+        <div class="list-container">
+          <div class="info-container">
+            <div class="address-container">
+              <span>8488 Beverly BLVD</span>
+              <span>Los Angeles, CA</span>
+            </div>
+              <div class="phone-container">
+                980-881-2777
+              </div>
+          </div>
+          <div class="store-number-container">
+            <div class="store-number">
+                1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <div id="map"></div>
+
+    <script src="js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZocUNFw7e-3t7G3qsz_8ZfszV4cu4sv8&callback=initMap"
+    async defer></script>
+   
+</body>
+
+
+</html>
